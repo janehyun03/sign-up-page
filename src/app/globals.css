@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: Poppins;
+  font-size: 2vh;
+}
+
+body {
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  box-sizing: border-box;
+}
+
+.container {
+  min-width: 100%;
+  display: flex;
+  padding: 10vw;
+}
+
+.sentence {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  font-size: 7vh;
+  font-weight: 900;
+  color: white;
+}
+
+.desc {
+  width: 100%;
+  font-size: 2.5vh;
+  color: white;
+}
+
+.card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first_card {
+  min-width: 80%;
+  margin: 3vh;
+  background-color: hsl(248, 32%, 49%);
+  display: flex;
+  justify-content: center;
+}
+.second_card {
+  min-width: 80%;
+}
+
+form {
+  background-color: white;
+  align-items: center;
+}
+
+input {
+  margin-top: 3vh;
+}
+
+.inputError {
+  margin-top: 3vh;
+  background-image: url("/images/icon-error.svg");
+  background-position: 98% center;
+  background-size: 2vh;
+  background-repeat: no-repeat;
+}
+
+.error {
+  float: right;
+  color: red;
+  background-color: white;
+}
+.condition_container {
+  color: gray;
+  text-align: center;
+}
+.condition {
+  font-size: 1vh;
+}
+
+.condition_term {
+  color: hsl(0, 100%, 74%);
+  font-size: 1vh;
+}
+
+button {
+  margin-top: 3vh;
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+  }
+  .sentence {
+    width: 100%;
+    padding-top: 0;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 4vh;
+  }
+  .desc {
+    width: 100%;
+    text-align: center;
+    font-size: 2vh;
+  }
+  .card {
+    margin-top: 2vh;
+    width: 100%;
+  }
+  .first_card {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .second_card {
+    width: 100%;
+  }
+}
